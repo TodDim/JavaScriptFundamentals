@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="myid"> </div>
+<script>
+    let color='';
+    let result='';
+    result+='<ul>\n';
+    for (let i = 1; i <=10; i++) {
+
+        if (i%2===0){
+            color='blue';
+        }
+        else{
+            color='green';
+        }
+        result+=`<li><span style=\'color:${color}\'>${i}</span></li>`;
+    }
+    result+='</ul>';
+    document.getElementById('myid').innerHTML=result;
+</script>
+
+
+</body>
+</html>
